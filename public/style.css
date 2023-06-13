@@ -1,0 +1,297 @@
+﻿.html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 !important;
+    background-color: #f9e2be !important;
+    width: 100% !important;
+}
+
+.slain {
+    width: 80% !important;
+    margin: auto;
+}
+
+.head {
+    width: 83% !important;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+}
+
+.bug {
+    background-color: cadetblue !important;
+}
+
+.beg a {
+    color: white;
+
+    background-color: #dd3675 !important;
+}
+
+.user {
+    color: rgb(45, 136, 255) !important;
+}
+
+.up {
+    width: 100%;
+    height: auto;
+    background-color: #f9e2be;
+}
+
+.modal-footer {
+    margin-top: 40px !important;
+}
+
+.sig {
+    font-style: italic;
+    margin-left: 40px;
+    margin-right: -10px;
+}
+
+.log {
+    font-weight: bold;
+    color: #dd3675 !important;
+}
+
+.up img {
+    padding-top: 10px;
+    margin-right: 50px;
+    height: 6.5rem;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.cart {
+    margin-right: 10px;
+    width: auto;
+}
+
+.slogan {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin: auto;
+    text-shadow: 2px 3px 3px gray;
+}
+
+.navbar {
+    background-color: #f9e2be;
+}
+
+.slide {
+    width: 88.9%;
+    margin: auto;
+}
+
+.shop {
+    font-family: 'Cormorant Garamond', serif;
+    width: 79%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 2rem;
+}
+
+.gioithieu1 {
+    color: #e4a033;
+}
+
+.welcom hr {
+    border-top: 2px solid #e4a033;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: #e4a033;
+}
+
+.gioithieu2 {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.fa-thumbs-up,
+.fa-phone,
+.fa-apple {
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.modau {
+    font-family: 'Comfortaa', cursive;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.fa-phone {
+    color: #e4a033;
+}
+
+.fa-apple {
+    color: #e4a033;
+}
+
+.fa-thumbs-up {
+    color: #e4a033;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.content {
+    background-color: #f9e2be;
+    width: 79%;
+    margin: auto;
+}
+
+.final {
+    width: 1900px !important;
+}
+
+.fix {
+    width: 1570px;
+    margin-right: 150px !important;
+    margin-left: 150px !important;
+}
+
+.productidimage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.section-title {
+    background-color: #fff;
+    display: inline-block;
+    width: 98.5%;
+    margin: auto;
+    border-top-width: 0.2rem;
+    border-top-style: solid;
+    border-top-color: rgb(255, 102, 153);
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    color: #f69;
+    font-size: 1rem;
+    line-height: 2.563rem;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+}
+
+.money {
+    font-weight: bold;
+}
+
+.image {
+    background-color: #fff;
+}
+
+.hinhanh {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hinhanh:hover img {
+    transform: scale(1.2);
+    opacity: 0.9;
+    transition: all 0.7s ease-in-out;
+}
+
+.image img {
+    height: 12.5rem;
+    width: 17.5rem;
+    border-radius: 1rem;
+    margin-top: 1.25rem;
+}
+
+.image input {
+    border-radius: 10px;
+    width: auto;
+    margin-bottom: 1.25rem;
+}
+
+.image button {
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    margin-bottom: 1.25rem;
+}
+
+.image button i {
+    border-radius: 10px;
+}
+
+.catname {
+    font-family: 'Comfortaa', cursive;
+    font-size: 150%;
+    padding-top: 0.3rem;
+}
+
+.space {
+    margin-top: 2rem;
+}
+
+.end {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+}
+
+#backtop {
+    width: 3rem;
+    height: 3rem;
+    background-color: #f69;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    body {
+        width: auto;
+    }
+
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}

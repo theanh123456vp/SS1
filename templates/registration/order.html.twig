@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Register
+
+
+{% endblock %}
+
+{% block body %}
+	<section class="vh-100 bg-cyan">
+		<div class="container h-100 py-5 ">
+			<div class="row d-flex justify-content-center align-items-center h-100 ">
+				<div class="col ">
+					<div class="card shopping-cart fix" style="border-radius: 50px;">
+						<div class="card-body text-black">
+
+							<div class="row">
+								<div class="col-lg-6 px- py-4 row align-items-center justify-content-center d-flex flex-column">
+									<h1 class="mb-5 pt-2 text-center fw-bold text-uppercase">{{ productID.name}}</h1>
+									<div class="d-flex justify-content-center mb-5 pt-2">
+
+										<img src="{{productID.image}}" class="img-responsive img-circle" width="400" height="400">
+
+
+									</div>
+									<hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+									<div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+										<h5 class="fw-bold mb-0">Price:</h5>
+										<h5 class="fw-bold mb-0">{{productID.price}}$</h5>
+									</div>
+								</div>
+								<div class="col-lg-6 px-5 py-4">
+
+									<h1 class="mb-5 pt-2 text-center fw-bold text-uppercase">Order!</h1>
+									{{ form_start(orderForm) }}
+									<div class="modal-body">
+										<div class="container-fluid mt-3">
+											<div class="form-row">
+												{% if app.user %}
+													<div class="form-group col-sm-12">
+														<label for="">Người dùng</label>
+														<input type="email" value="{{ app.user.email}}" name="email" disabled class="form-control"/>
+													</div>
+													<br>
+												{% endif %}
+												<div class="form-group col-sm-12">
+													<label for="">Tên khách hàng</label>
+													{{ form_widget(orderForm.name) }}
+												</div>
+												<br>
+
+												<div class="form-group col-sm-12">
+													<label for="">Số điện thoại</label>
+													{{ form_widget(orderForm.phoneNumber) }}
+												</div>
+												<br>
+												<div class="form-group col-sm-12">
+													<label for="">Địa chỉ</label>
+													{{ form_widget(orderForm.address) }}
+												</div>
+												<br>
+												<div class="form-group col-sm-12">
+													<label for="nameID">Tên sản phẩm</label>
+													<input value="{{ productID.name}}" id="nameID" disabled class="form-control"/>
+												</div>
+												<br>
+												<div class="form-group col-sm-12">
+													<label for="priceID">Giá sản phẩm</label>
+													<input value="{{ productID.price}}$" id="priceID" disabled class="form-control"/>
+												</div>
+												<br>
+
+												<div class="form-group col-sm-12">
+													<label for="">Bạn có đồng ý mua sản phẩm này không?</label>
+													{{ form_widget(orderForm.agreeTerms) }}
+												</div>
+											</div>
+										</div>
+									</div>
+									<br>
+									<br>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-success  bug">
+											Đặt hàng
+
+
+										</button>
+										<a href="/">
+											<button type="button" class="btn btn-danger beg">
+												Hủy
+											</button>
+										</a>
+									</div>
+									{{ form_end(orderForm) }}
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

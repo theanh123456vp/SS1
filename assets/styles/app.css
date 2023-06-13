@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+
+.productidimage img {
+
+    height: 12.5rem !important;
+    width: 17.5rem !important;
+    border-radius: 1rem !important;
+    margin-top: 1.25rem !important;
+
+}
